@@ -9,6 +9,37 @@ nav.navbar
 }
 a.margin
 {
-    margin-top: 80px;
+ margin-top: 15px;
+}
+.coluna-dash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
 
+}
+.div_grafico_1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1270px;
+}
+.coluna-dash-inf{
+    display: flex;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.coluna-dash-inf
+{
+ width: 500px;
+}
+.div_grafico_um
+{
+    margin-right: 50px;
+    margin-left: 45px
+}
+.sidebar-sticky
+{
+    display: none;
 }
