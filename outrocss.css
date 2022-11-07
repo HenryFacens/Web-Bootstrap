@@ -223,6 +223,7 @@
   background: none;
 }
 .home-section{
+  padding-top: 70px;
   position: relative;
   min-height: 100vh;
   top: 0;

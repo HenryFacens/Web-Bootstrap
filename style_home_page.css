@@ -1,0 +1,25 @@
+.barra
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+}
+ 
+.barra2
+{
+    background-color: var(--main-color);
+
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.botao_entrar
+{
+
+}
+.bot{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}

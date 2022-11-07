@@ -5,7 +5,10 @@
 }
 nav.navbar
 {
-    background-color: var(--main-color)
+    background-color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    
 }
 a.margin
 {
