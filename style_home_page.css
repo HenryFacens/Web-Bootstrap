@@ -7,11 +7,12 @@
  
 .barra2
 {
-    background-color: var(--main-color);
-
-    width: 90%;
     display: flex;
+    background-color: var(--main-color);
+    width: 90%;
     justify-content: center;
+    align-content: center;
+    margin-left: 90px
 }
 
 .bot{
@@ -30,8 +31,6 @@
     flex-direction: column;
     margin-top: 97px;
     justify-content: center;
-    border-color: blueviolet;
-    border-style: solid;
     width: 100%;
     height: 100%;
 }
@@ -39,7 +38,6 @@
 {
     display: flex;
     justify-content: center;
-    margin-right: 60px;
     margin-top: 50px;
 }
 .img_dash
@@ -47,13 +45,12 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .next_1
 {
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-color: brown;
     width: 100%;
 }
 .icon-user
@@ -64,4 +61,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.criatividade
+{
+    border-radius: 20px;
+}
+.web
+{
+    width: 500px;
+}
+.centralizar
+{
+    padding-top: 60px;
+}
+.cartao-1
+{
+    padding-bottom: 25px;
 }
