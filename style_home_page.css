@@ -9,17 +9,59 @@
 {
     background-color: var(--main-color);
 
-
     width: 90%;
     display: flex;
     justify-content: center;
 }
-.botao_entrar
-{
 
-}
 .bot{
     padding-top: 15px;
     display: flex;
     justify-content: center;
+}
+.principal
+{
+    display: flex;
+
+}
+.imagem_dash
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 97px;
+    justify-content: center;
+    border-color: blueviolet;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+}
+.text_web
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    margin-top: 50px;
+}
+.img_dash
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.next_1
+{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: brown;
+    width: 100%;
+}
+.icon-user
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
