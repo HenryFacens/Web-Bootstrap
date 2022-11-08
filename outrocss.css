@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+.icon1
+{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
 .sidebar{
     margin-top: 66px;
   position: fixed;
@@ -276,3 +284,6 @@
     color: white;
     width: 0;
 }
+
+
+
