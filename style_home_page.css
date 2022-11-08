@@ -49,14 +49,10 @@
 }
 .next_1
 {
-    display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .icon-user
 {
-    width: 50px;
-    height: 50px;
     margin-right: 20px;
     display: flex;
     justify-content: center;
@@ -92,7 +88,7 @@
 .card1
 {
     background-color: #daffda;
-    padding-bottom: 18px
+    padding-bottom: 16px
 }
 .card2
 {
@@ -104,19 +100,44 @@
 }
 .back
 {
-    position: absolute;
-    display: flex;
-    width: 200px;
-    height: 100px;
-    margin-left: 20vw;
-    height: 640px;
-    width: 1500px;
-    background-color: #191970;
     border-style: solid;
-    border-radius: 100px;
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    margin-left: 20vw;
+    border-style: solid;
     border-color: #191970;
+    border-radius: 30px;
+    background-color: #191970;
+    
 }
 .big
 {
     margin-bottom: 30px;
 }
+.sla {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #191970;
+    width: 80%;
+    margin-left: 10vw;
+    padding: 60px;
+    background-color: #191970;
+}
+
+.bx {
+    width: 25px;
+    height: 25px;
+}
+
+.col-md-7 {
+    
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
