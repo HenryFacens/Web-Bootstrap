@@ -42,10 +42,6 @@
 }
 .img_dash
 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 .next_1
 {
@@ -69,6 +65,8 @@
 .centralizar
 {
     padding-top: 60px;
+    justify-content: space-around;
+    align-items: center;
 }
 .cartao-1
 {
@@ -88,7 +86,6 @@
 .card1
 {
     background-color: #daffda;
-    padding-bottom: 16px
 }
 .card2
 {
@@ -113,7 +110,7 @@
 }
 .big
 {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .sla {
     border-style: solid;

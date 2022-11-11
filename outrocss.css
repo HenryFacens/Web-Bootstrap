@@ -332,3 +332,31 @@ padding-top: 68px;
     display: flex;
     justify-content: center;
 }
+
+#icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.ko {
+    display:flex;
+    border: solid;
+    border-color: black;
+    width: 70%;
+    height: 70%;
+}
+
+
+
+.a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.es {
+    
+}
