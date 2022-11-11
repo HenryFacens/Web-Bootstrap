@@ -14,16 +14,17 @@
     height: 30px;
 }
 .sidebar{
-    margin-top: 66px;
   position: fixed;
   left: 0;
-  top: 0;
   height: 100%;
   width: 78px;
   background: var(--main-color);
   padding: 6px 14px;
-  z-index: 99;
+    justify-content: center;
+padding-top: 68px;
+    z-index: -1;
   transition: all 0.5s ease;
+
 }
 .sidebar.open{
   width: 250px;
@@ -289,4 +290,19 @@
 
 
 .ah {
+}
+
+
+
+
+
+
+
+
+
+
+
+#navbar_logo {
+    width: 20px;
+    
 }
