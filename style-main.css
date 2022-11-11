@@ -8,7 +8,7 @@ nav.navbar
     background-color: var(--main-color);
     position: fixed;
     width: 100%;
-    
+    z-index: 1;
 }
 a.margin
 {
@@ -19,14 +19,16 @@ a.margin
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
+    padding-bottom: 65px;
 
 }
 .div_grafico_1
 {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 1270px;
+    justify-content: space-around;
+    z-index: -1;
 }
 .coluna-dash-inf{
     display: flex;
@@ -38,10 +40,7 @@ a.margin
  width: 500px;
 }
 .div_grafico_um
-{
-    margin-right: 50px;
-    margin-left: 45px
-}
+
 .sidebar-sticky
 {
     display: none;

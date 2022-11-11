@@ -7,11 +7,11 @@
 }
 .icon1
 {
-    width: 30px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 50px;
 }
 .sidebar{
   position: fixed;
@@ -22,7 +22,6 @@
   padding: 6px 14px;
     justify-content: center;
 padding-top: 68px;
-    z-index: -1;
   transition: all 0.5s ease;
 
 }
@@ -239,9 +238,10 @@ padding-top: 68px;
   top: 0px;
   left: 78px;
   color: black;
+    justify-content: center;
+    align-items: center;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
-  z-index: -1;
 }
 .sidebar.open ~ .home-section{
   left: 250px;
@@ -303,6 +303,32 @@ padding-top: 68px;
 
 
 #navbar_logo {
-    width: 20px;
-    
+    width: 150px;
+}
+
+.container-fluid {
+    z-index: -1;
+}
+
+.main2 {
+    width: 100%;
+    height: 100%;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+
+}
+
+
+
+.dados_centro {
+    display: flex;
+    justify-content: center;
 }
