@@ -5,6 +5,7 @@
 }
 nav.navbar
 {
+    display: flex;
     background-color: var(--main-color);
     position: fixed;
     width: 100%;

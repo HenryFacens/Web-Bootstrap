@@ -13,6 +13,11 @@
     align-items: center;
     height: 50px;
 }
+.animacaoBaixo
+{
+    transition: 1s;
+    
+}
 .sidebar{
   position: fixed;
   left: 0;
@@ -323,7 +328,6 @@ padding-top: 68px;
     width: 50%;
     height: 100%;
     padding: 5px;
-
 }
 
 
@@ -357,6 +361,28 @@ padding-top: 68px;
     margin-top: 50px;
 }
 
-.es {
-    
+
+.menu {
+    display: none;
+    position: absolute;
+
+}
+.menu-open {
+    display: flex;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -120px;
+}
+
+
+
+.ua {
+    display: flex;
+    flex-direction: row;
+}
+
+.ponta {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5px;
 }
