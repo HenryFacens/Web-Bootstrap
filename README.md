@@ -17,5 +17,16 @@ Foi utilizado o Bootstrap para maximizar o processo de criação do Trabalho.
 
 - Eduardo Weber
 
-- Lucas Oliveira 
+- Lucas Oliveira
+
+#### Equipe
+- Henry Almeida
+
+- Eduardo Weber
+
+- Lucas Oliveira
+
+- Rafael Ferro
+
+- Breno Pádua
 ---
