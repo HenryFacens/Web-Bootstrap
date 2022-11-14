@@ -6,12 +6,12 @@ Trabalho executado em equipe.
 git clone https://github.com/HenryFacens/Web-Bootstrap.git
 ```
 
-## Bootstrap
+## Bootstrap -
 
 Foi utilizado o Bootstrap para maximizar o processo de criação do Trabalho.
  
 
-### Contribuintes
+### Contribuintes :
 
 - Henry Almeida
 
@@ -19,7 +19,7 @@ Foi utilizado o Bootstrap para maximizar o processo de criação do Trabalho.
 
 - Lucas Oliveira
 
-#### Equipe
+#### Equipe :
 - Henry Almeida
 
 - Eduardo Weber
