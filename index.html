@@ -21,7 +21,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Web's</title>
+    <link rel="icon" href="https://mlogu6g7z5ex.i.optimole.com/cb:RF8R~518a6/w:auto/h:auto/q:90/https://facens.br/wp-content/uploads/2021/03/fav.png">
+    <title>Web's</title>
 </head>
 
 <body>
@@ -100,21 +101,21 @@
       <ul class="nav-list">
           <li>
               <a href="index.html">
-                  <i class='bx bx-bar-chart'></i>
+                  <i class='bx bx-bar-chart' id="btn1"></i>
                   <span class="links_name" id="start-page">Dashboard</span>
               </a>
               <span class="tooltip">Página inicial</span>
           </li>
           <li>
               <a href="#">
-                <i class="bx bx-data"></i>
+                <i class="bx bx-data" id="btn2"></i>
                   <span class="links_name ">Dados</span>
               </a>
               <span class="tooltip">Dados</span>
           </li>
           <li>
               <a href="#">
-                  <i class='bx bx-chat'></i>
+                  <i class='bx bx-chat' id="btn3"></i>
                   <span class="links_name">Serviços</span>
               </a>
               <span class="tooltip">Serviços</span>
@@ -122,7 +123,7 @@
       </ul>
   </div> 
   <section class="home-section">
-      <div class="coluna-dash">
+      <div class="coluna-dash" id="dashboard">
         <div class="coluna-dash-inf">
         <h1 class="h2-dash">Dashboard</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
@@ -152,13 +153,14 @@
       </div>
 
     </div>
-      <div class="dados_centro" id="dados">
-    <main role="main" class="dados border">
+      <div class="" id="dados">
+<h2>Dados Coletados</h2>
+          <main role="main" class="dados border dados_centro mt-5">
       <div class="main2">
-      <h2>Dados Coletados</h2>
+      
       <div class="">
-        <table class="table">
-          <thead>
+        <table class="table" id="menos_texto">
+            <thead>
             <tr>
               <th>---------</th>
               <th>---------</th>
@@ -197,8 +199,82 @@
               <th>---------</th>
             </tr>
           </tbody>
+            
+        </table>
+        <table class="table" id="mais_texto" style="display:none">
+            <thead>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+              <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+            <tr>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+              <th>---------</th>
+            </tr>
+              
+          </tbody>
+            
+            
         </table>
       </div>
+          <button class="btn btn-primary bg-white text-secondary " type="button" id="mais_btn" onclick="leiaMais()">Mais</button> 
     </div>
         
     </main>
@@ -405,6 +481,41 @@ if(sidebar.classList.contains("open")){
             }
                 
         </script>
+    
+    <script>
+    const divs = [...document.querySelectorAll('#dashboard,#dados,#servicos')];
+    const botoes = [...document.querySelectorAll("#btn1,#btn2,#btn3")];
+
+    for (let i = 0; i < botoes.length; ++i){ //percorrer todos os botoes
+      botoes[i].addEventListener("click", function(){ //definir o click para cada um
+        divs.forEach(div => div.style.display = "none"); //esconder todos os divs
+        divs[i].style.display = "flex"; //mostrar o que foi clicado
+      });
+    }
+
+    divs.forEach(div => div.style.display = "none"); //iniciar todos escondidos
+    divs[0].style.display="flex"; //Exibe só a primeira div
+    </script>
+    <script>
+        function leiaMais(){
+            var text = [...document.querySelectorAll("#mais_texto, #menos_texto")];
+            var btn1 = document.getElementById("mais_btn");
+            if(text[0].style.display==="none"){
+                
+                text[0].style.display="block"
+                //text.[0].className="table"
+                text[1].style.display="none"
+                btn1.innerHTML="Mais";
+            }else{
+                //text.innerHTML="";
+                text[1].style.display="block"
+                //text.[1].className="table"
+                text[0].style.display="none"
+                btn1.innerHTML="Menos"
+            }
+        }
+        
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
