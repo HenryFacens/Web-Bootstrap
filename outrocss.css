@@ -372,3 +372,10 @@ padding-top: 68px;
 }
 
 
+
+#servicos {
+    display: flex;
+    flex-direction: column
+    justify-content: space-around;
+    
+}
